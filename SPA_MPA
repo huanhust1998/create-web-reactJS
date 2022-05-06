@@ -1,2 +1,44 @@
 - SPA: Single_Page Application
 - MPA: Multi_Page Application
+
+### So sánh
+- SPA nhanh hơn trong khi sử dụng
+    - Phần lớn tài nguyên được tải trong lần đầu.
+    - Nếu tối ưu không tốt thì lần tải đầu sẽ mất thời gian.
+    - Trang chỉ tại thêm dữ liệu mới khi cần.
+- MPA chậm hơn khi sử dụng
+    - Luôn tải lại toàn bộ trang khi truy cập và chuyển hướng
+
+### Bóc tách
+- SPA có phần Front-end riêng biệt
+- MPA Front-end và Back-end phụ thuộc nhau nhiều hơn, được đặt trong cùng 1 dự án.
+
+### SEO
+- SPA không thân thiện với SEO như MPA
+
+### UX: User Experience
+- SPA cho trải nghiệm người dùng tốt hơn, nhất là các thao tác chuyển trang
+- Trải nghiệm trên thiết bị di động tốt hơn
+
+### Quá trình phát triển
+- SPA dễ dàng tái sử dụng code (component)
+- SPA bóc tách FE và BE
+    - Chia team phát triển song song
+    - Phát triển thêm mobile app dễ dàng
+
+
+
+### SERVER-SIDE RENDERING: Phần lớn Logic sẽ được xử lý ở server.
+- Khi người dùng vào một trang web, trình duyệt sẽ gửi GET request tới web server.
+- Web server sẽ nhận request, đọc dữ liệu từ database.
+- Web server sẽ render HTML, trả về browser để hiển thị cho người dùng.
+- Logic đơn giản đển phức tạp đều năm ở server
+- Logic routing - chuyển trang nằm ở server
+- Logic để render - hiển thị web cũng nằm ở server
+
+
+### CLIENT SIDE RENDERING tức là việc render HTML, CSS sẽ được thực hiện ở client.
+- Những logic đơn giản nằm ở client side
+- Logic để routing, render thì nằm ở client side
+- Page chỉ load một lần duy nhất. 
+- Lần load đầu tiên sẽ châm hơn nếu không biết optimize.
